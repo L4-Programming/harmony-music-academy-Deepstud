@@ -1,6 +1,5 @@
 // javascript
 
-alert("Error Page Has Been Hacked by the USSR");
 console.log("Java Script has loaded successfully");
 // Beginners 5 hours per week.
 // Advanced 10 hours per week.
@@ -12,3 +11,22 @@ console.log("Java Script has loaded successfully");
 //Show correct costs for the level
 
 //Main task to validation rules such as ensure that the input is valid. Email check, selected hours are correct.
+
+// Display a form to the user
+// Include input fields for the user's email address, level, and hours of study
+
+//Present  check
+// Validation that hours are correct for the level
+let userName = string;
+let userLevel = string;
+let userEmail = string;
+let userHours = int;
+
+function validationHours() {
+  if (userLevel == Beginner) {
+  }
+}
+// Capture user's input on form submission
+// Validate the user's input
+// Calculate the total cost
+// Display the total cost to the user
