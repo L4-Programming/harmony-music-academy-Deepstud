@@ -1,7 +1,7 @@
 // javascript
 
-alert("Hello from index.js!");
-
+alert("Error Page Has Been Hacked by the USSR");
+console.log("Java Script has loaded successfully");
 // Beginners 5 hours per week.
 // Advanced 10 hours per week.
 // Won't input form unless  1 hour is selected.
