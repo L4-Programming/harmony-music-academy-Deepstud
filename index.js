@@ -23,8 +23,20 @@ let form = document.querySelector("form");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  console.log("Form submitted");
+  // Store the user's email address as userEmail (string/text)
+
+  let userEmail = document.querySelector("#email").value;
+
+  console.log({ userEmail });
+
+  let userHours = parseInt(document.querySelector("#hoursPerWeek").value);
+
+  console.log({ userHours });
+
+  let userLevel = document.querySelector("#level").value;
+  console.log({ userLevel });
 });
+
 // Store the user's email address as userEmail (string/text)
 // Store the user's level as userLevel (string/text)
 // Store the user's hours of study as userHours (number)
