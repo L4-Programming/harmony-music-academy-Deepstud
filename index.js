@@ -18,28 +18,24 @@ console.log("Java Script has loaded successfully");
 //Present  check
 // Validation that hours are correct for the level
 
-// Capture user's input on form submission
 let form = document.querySelector("form");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   // Store the user's email address as userEmail (string/text)
+  // Capture user's input on form submission
 
+  // Store the user's email address as userEmail (string/text)
   let userEmail = document.querySelector("#email").value;
 
-  console.log({ userEmail });
-
+  // Store the user's hours of study as userHours (number)
   let userHours = parseInt(document.querySelector("#hoursPerWeek").value);
 
-  console.log({ userHours });
-
+  // Store the user's level as userLevel (string/text)
   let userLevel = document.querySelector("#level").value;
-  console.log({ userLevel });
+  console.log({ userEmail, userLevel, userHours });
 });
 
-// Store the user's email address as userEmail (string/text)
-// Store the user's level as userLevel (string/text)
-// Store the user's hours of study as userHours (number)
 // Validate the user's input
 // Check if the user has selected a level
 // Check if the user has provided an email address
@@ -47,10 +43,6 @@ form.addEventListener("submit", function (event) {
 // Check if the number of hours requested is within the allowed range
 // Calculate the total cost
 // Display the total cost to the user
-let userName = string;
-let userLevel = string;
-let userEmail = string;
-let userHours = int;
 
 // Capture user's input on form submission
 // Validate the user's input
