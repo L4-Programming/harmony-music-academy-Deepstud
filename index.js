@@ -1,4 +1,4 @@
-// javascript
+import { validateForm } from "./validateForm.js";
 
 console.log("Java Script has loaded successfully");
 // Beginners 5 hours per week.
@@ -23,14 +23,6 @@ let form = document.querySelector("form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const maxHoursPerLevel = {
-    basic: 5,
-    advanced: 10,
-  };
-
-  // Store the user's email address as userEmail (string/text)
-  // Capture user's input on form submission
-
   // Store the user's email address as userEmail (string/text)
   let userEmail = document.querySelector("#email").value;
 
@@ -39,60 +31,10 @@ form.addEventListener("submit", function (event) {
 
   // Store the user's level as userLevel (string/text)
   let userLevel = document.querySelector("#level").value;
+  // Store the user's email address as userEmail (string/text)
+  // Capture user's input on form submission
 
-  // Validate the user's input
+  const result = validateForm({ userEmail, userLevel, userHours });
 
-  // Check if the user has provided an email address
-  if (userEmail === "") {
-    alert("Please enter your email address.");
-
-    return;
-  }
-
-  // Validate the user's input
-  // Check if the user has provided an email address
-  if (userLevel === "") {
-    alert("Please enter your level.");
-
-    return;
-  }
-
-  // Validate the user's input
-  // Check if the user has provided an email address
-  console.log(typeof userHours);
-  console.log(userHours);
-  if (isNaN(userHours) || userHours <= 0) {
-    alert("Please enter the number of hours.");
-
-    return;
-  }
-
-  if (!maxHoursPerLevel.hasOwnProperty(userLevel)) {
-    alert("In correct about of study for selected level");
-
-    return;
-  }
-
-  // Is userHours in range?
-  const maxAllowedHours = maxHoursPerLevel[userLevel];
-  if (userHours > maxAllowedHours) {
-    alert(`You can only study a maximum of ${maxAllowedHours} hours per week.`);
-
-    return;
-  }
-
-  console.log({ userEmail, userLevel, userHours });
+  console.log({ result });
 });
-
-// Validate the user's input
-// Check if the user has selected a level
-// Check if the user has provided an email address
-// Check if the user has specified at least one hour of study
-// Check if the number of hours requested is within the allowed range
-// Calculate the total cost
-// Display the total cost to the user
-
-// Capture user's input on form submission
-// Validate the user's input
-// Calculate the total cost
-// Display the total cost to the user
