@@ -1,5 +1,6 @@
 import { validateForm } from "./validateForm.js";
 import { calculateCosts } from "./calculateCosts.js";
+import { displayResults } from "./displayResults.js";
 
 console.log("Java Script has loaded successfully");
 // Beginners 5 hours per week.
@@ -42,5 +43,6 @@ form.addEventListener("submit", function (event) {
     const calculation = calculateCosts(result);
     console.log("True");
     console.log(calculation);
+    displayResults(calculation);
   }
 });
