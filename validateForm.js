@@ -54,8 +54,9 @@ function removeErrors() {
     div.innerHTML = "";
   });
 }
+
+removeErrors();
 export function validateForm({ userEmail, userLevel, userHours }) {
-  removeErrors();
   const maxHoursPerLevel = {
     basic: 5,
     advanced: 10,
