@@ -18,14 +18,11 @@ export function displayErrors(errors) {
 
     if (errorDiv) {
       errorDiv.classList.add("error-message");
-
       let ul = document.createElement("ul");
 
       errors[field].messages.forEach((message) => {
         let li = document.createElement("li");
-
         li.textContent = message;
-
         ul.appendChild(li);
       });
 
@@ -86,7 +83,6 @@ export function validateForm({ userEmail, userLevel, userHours }) {
   if (userHours > maxAllowedHours) {
     addError(
       "hoursPerWeek",
-
       `You can only study a maximum of ${maxAllowedHours} hours per week.`
     );
   }
